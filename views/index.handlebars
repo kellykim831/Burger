@@ -1,65 +1,66 @@
-<div class="card text-center">
+<div class="border border-danger card text-center" style="background-color: rgba(245, 245, 245, 0.5);">
   <div class="card-header">
-    <h1><i style="color: black ">Eat Da Burger!</i></h1>
+    <h1><i style="color: black">Eat Da Burger!</i></h1>
     <img src="/assets/cuteburger.png" alt="Cartoon Burger" width="100" height="100" style="vertical-align:middle">
   </div>
 </div>
+
 <br>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="card bg-light mb-6">
-        <h2 class="card text-center">Pick A Burger!</h2>
-        <div class="card-body">
-          <p class="card-text">
-          <ul>
-            {{#each burgers}}
-            {{#unless devoured}}
-            {{> burgers/burger-block devour=true}}
-            {{/unless}}
-            {{/each}}
-          </ul>
-          </p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="col">
-      <div class="card bg-light mb-6">
-        <h2 class="card text-center">Burgers in Yo Belly!</h2>
-        <div class="card-body">
-          <p class="card-text">
-          <ul>
-            {{#each burgers}}
-            {{#if devoured}}
-            {{> burgers/burger-block devour=false}}
-            {{/if}}
-            {{/each}}
-          </ul>
-          </p>
-        </div>
+<div class="row">
+  <div class="col">
+    <div class="mb-6 border border-danger" style="background-color: rgba(245, 245, 245, 0.5);">
+      <h2 class="card text-center" style="background-color:yellow;" >Pick A Burger!</h2>
+      <div class="card-body" style="text-align: right;">
+        <p class="card text">
+        <ul>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devour=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
+        </p>
       </div>
     </div>
   </div>
+
   <br>
-  <div class="card text-center">
-    <h2 class="card-header">
-      Add a Burger
-    </h2>
-    <form class="create-form">
-      <div class="form-group">
-        <label for="bg">Burger Name:</label>
-        <input type="text" id="bg" name="burger_name">
+  <div class="col">
+    <div class="mb-6 border border-danger" style="background-color: rgba(245, 245, 245, 0.5);">
+      <h2 class="card text-center" style="background-color:yellow;">Burgers in Yo Belly!</h2>
+      <div class="card-body" style="text-align: right;">
+        <p class="card text">
+        <ul>
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burgers/burger-block devour=false}}
+          {{/if}}
+          {{/each}}
+        </ul>
+        </p>
       </div>
-      <div class="form-group">
-        <label for="eat">Who's Hungry?!</label><br>
-        <input type="radio" name="devour" value="1" checked> Devour it Now!<br>
-        <input type="radio" name="devour" value="0"> Eat it later .
-      </div>
-      <button type="submit">Add Burger</button>
-    </form>
-    </p>
+    </div>
   </div>
+</div>
+<br>
+<div class="card text-center border border-danger" style="background-color: rgba(245, 245, 245, 0.5);">
+  <h2 style="background-color: yellow;">
+    Add a Burger
+  </h2>
+  <form class="create-form">
+    <div class="form-group">
+      <label for="bg"><strong><h4>Burger Name:</h4></strong></label>
+      <input type="text" id="bg" name="burger_name">
+    </div>
+    <div class="form-group">
+      <label for="eat"><strong><h4>Who's Hungry?</h4></strong></label><br>
+      <input type="radio" name="devour" value="1" checked><strong><h4>Eat it Now!</h4></strong><br>
+      <input type="radio" name="devour" value="0"><strong><h4>Eat it Later</h4></strong>
+    </div>
+    <button type="submit">Add Burger</button>
+  </form>
+  </p>
+</div>
 </div>
 <footer class="text-center footer">
   <div style="background-color:gainsboro;">
