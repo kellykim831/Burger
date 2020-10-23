@@ -10,16 +10,16 @@
  My Eat Da Burger App that got generated from Git Bash:
 
  ![alttext](hamburger.gif)
- <br>
+ 
  Snippet of the app:
  ![image](hamburger1.png)
- <br>
+ 
  Bottom part of the app:
  ![image](hamburger2.png)
- <br>
+ 
  Snippet of the terminal generating results:
  ![image](hamburgercode.png)
- <br>
+ 
   Snippet of my controller.js code:
  ![image](hamburgercode2.png)
 
