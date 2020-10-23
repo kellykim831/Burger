@@ -9,7 +9,7 @@
 
  Here is a Gif of My Eat Da Burger App that got generated from Git Bash:
 
- ![alttext](hamburger.gif)
+ ![alttext](Hamburger.gif)
  
  Snippet of the app:
  ![image](hamburger1.png)
