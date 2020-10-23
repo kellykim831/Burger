@@ -7,7 +7,7 @@
   This was an extremely tedious process set up! The first step was to set up several folders. Here is the list: App Setup, DB Setup, Config Setup, Model Setup, Controller Setup and the View Setup. The next step is to install node and the dependencies were Express, Express handlebars and MySql. Please see below for some snippets:
 
 
- My Eat Da Burger App that got generated from Git Bash:
+ Here is a Gif of My Eat Da Burger App that got generated from Git Bash:
 
  ![alttext](hamburger.gif)
  
