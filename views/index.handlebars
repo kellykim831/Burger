@@ -1,57 +1,70 @@
-<div id="background">
-  <img
-    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/52212e63-6b26-49c6-b7bb-1083c4231f79/d5f7k9p-44b0ed7b-9869-4cfb-8a88-762cf9b0f429.png/v1/fill/w_1024,h_1024,q_75,strp/_ham_burger___by_maeme96-d5f7k9p.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi81MjIxMmU2My02YjI2LTQ5YzYtYjdiYi0xMDgzYzQyMzFmNzkvZDVmN2s5cC00NGIwZWQ3Yi05ODY5LTRjZmItOGE4OC03NjJjZjliMGY0MjkucG5nIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTEwMjQifV1dfQ.TFJHrp-dXPHz0YYIE6kxlvxDOM7dUf0F1bXkQ1fi2bI"
-    class="center" width="200px" height="200px" alt="" />
-</div>
-
-
 <div class="card text-center">
-  <div class="card-header" style="background-color: rgb(233, 153, 61);">
-    <h1><i style="color: brown;" class="fas fa-cheeseburger">Eat Da Burger!</i><i style="color: brown;" class="fas fa-cheeseburger"></i></h1>
+  <div class="card-header">
+    <h1><i style="color: black ">Eat Da Burger!</i></h1>
+    <img src="/assets/cuteburger.png" alt="Cartoon Burger" width="100" height="100" style="vertical-align:middle">
   </div>
-  <div class="card-body">
-
-    <h2 class="card-title">Which Burger Are You Craving Today?</h2>
-    <ul>
-      {{#each burgers}}
-      {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-      {{/unless}}
-      {{/each}}
-    </ul>
-
-    <h2>Burgers you've devoured</h2>
-
-    <ul>
-      {{#each burgers}}
-      {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-      {{/if}}
-      {{/each}}
-    </ul>
-
-    <h2>Add a Burger</h2>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card bg-light mb-6">
+        <h2 class="card text-center">Pick A Burger!</h2>
+        <div class="card-body">
+          <p class="card-text">
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devour=true}}
+            {{/unless}}
+            {{/each}}
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="col">
+      <div class="card bg-light mb-6">
+        <h2 class="card text-center">Burgers in Yo Belly!</h2>
+        <div class="card-body">
+          <p class="card-text">
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block devour=false}}
+            {{/if}}
+            {{/each}}
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="card text-center">
+    <h2 class="card-header">
+      Add a Burger
+    </h2>
     <form class="create-form">
-
       <div class="form-group">
         <label for="bg">Burger Name:</label>
         <input type="text" id="bg" name="burger_name">
       </div>
-
       <div class="form-group">
-        <label for="eat">Would you like to devour this burger?</label><br>
+        <label for="eat">Who's Hungry?!</label><br>
         <input type="radio" name="devour" value="1" checked> Devour it Now!<br>
         <input type="radio" name="devour" value="0"> Eat it later .
       </div>
-
       <button type="submit">Add Burger</button>
     </form>
-
     </p>
-
-    <div class="card-footer text-muted" style="background-color: rgb(233, 153, 61);">
-      <strong><i style="color: brown;" class="fas fa-cheeseburger"></i>
-        WE LOVE BURGERS! Copyright© 2020
-        <i style="color: brown;" class="fas fa-cheeseburger"></i></strong>
-    </div>
   </div>
+</div>
+<footer class="text-center footer">
+  <div style="background-color:gainsboro;">
+    <strong style="color: black">
+      WE LOVE BURGERS! Copyright© 2020
+    </strong>
+  </div>
+</footer>
