@@ -27,7 +27,7 @@
  You will need VS code and the dependencies are Express, Express-handlebars and MySql.
  
  ## Usage 
-Eat-Da-Burger is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will display the burger at the top of the page -- waiting to be devoured. Each burger in the waiting area has a "Get in my Belly!" button, "Eat it Again!" button and a :"Delete!" button. The app will store every burger in a database, whether devoured or not.
+Eat-Da-Burger is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will display the burger on the right side of the page, and the burgers listed on the left side are waiting to be devoured. Each burger either has a "Get in my Belly!" button or an "Eat it Again!" button along with a "Delete!" button. The app will store every burger in a database, whether devoured or not.
 
 
 ### Installing/Technology Used
